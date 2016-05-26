@@ -69,7 +69,15 @@ public class Out {
 		protected void protected_method() {
 		}
 
-		public void public_method() {
+		/**
+		 * Cannot reduce the visibility of the inherited method from InMethod
+		 * 继承接口的时候不能降低接口方法的可访问性
+		 */
+		/*private void public_method() {
+		}*/
+		
+		public void public_method(){
+			
 		}
 
 	}
