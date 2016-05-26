@@ -30,7 +30,11 @@ public class Subling {
 		//but use Interface reference to handle it
 		InMethod privateIn = out.getPrivateIn();
 		privateIn.public_method();
-		
+		/**
+		 * 说明：Out.PrivateIn类对非父类的类来说是不可访问的，但是Out.PrivateIn类继承了InMethod接口，
+		 * 如果Out类提供了可以在外部类访问的创建PrivateIn类的工厂方法，那么外部类可以通过InMethod接口调用
+		 * Out.PrivateIn类中的方法
+		 */
 	}
 	
 }
